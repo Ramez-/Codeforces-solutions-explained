@@ -2,13 +2,15 @@
 /*
  * Created by: Ramez Elbaroudy
  * 
- * Have a stack which you need to remove elments from it in order, give the least number of times you will reorder it 
+ * Problem: You have a number of queury wheather to add number to multiset or remove a number or ask for number
+ * 			in the multiset that do the biggest xor with certain number input, the multiset will always have
+ * 			zero in the set which means the minumum vale of xoring will be the value itself as 
+ * 			value xor zero = value
  * 
- * in order to solve this problem in o(n) you need to clear the stack whenever you peek on value that is not the one expected
- * clearing the stack will mean that these elements are sorted, however if element that is in order is pushed then it can be poped easily without
- * any other reordering
- * 
- * The code runs in O(n) 
+ *  To solve this problem opitmally a smart idea is to use trie data structure to save add, search and remove elements
+ *  in the multiset. The values will be insered as 32 bit binary to the trie 
+ *  
+ *  
  */
 
 import java.io.*;
