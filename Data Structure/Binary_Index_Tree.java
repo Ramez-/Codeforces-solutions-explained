@@ -73,9 +73,6 @@ public class Binary_Index_Tree {
 		for (int i = 1; i <= n; i++) {
 			update(i, i);
 		}
-		// for(int i = 1; i <= n; i++){
-		// System.out.println(BIT[i]);
-		// }
 		update(5, 3);
 		System.out.println(sumTillIndex(5));
 
