@@ -8,6 +8,13 @@ import java.util.StringTokenizer;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
+/*
+ * Get the minimal consecutive unique charchters in string
+ * 
+ * Use two pointers, end and start, the end will keep moving right until it covers
+ * all charchters are covered in the string between start and end, then move the start
+ * to get the minumal string possible
+ */
 public class They_Are_Everywhere_701C {
 
 	public static void main(String[] args) throws IOException {
@@ -51,68 +58,8 @@ public class They_Are_Everywhere_701C {
 				ans = Math.min(ans, end - start);
 			}
 		}
-		
-		System.out.println(ans);
 
-//		int hi = n;
-//		int lo = countUnique;
-//		int mid = (hi + lo) / 2;
-//		boolean found = false;
-//		int smallestPossibleMid = n;
-//
-//		while (hi > lo) {
-//			mid = (hi + lo) / 2;
-//			TreeMap<Character, Integer> treeMap = new TreeMap<>();
-//
-//			int pointerOne = 0;
-//			int pointerTwo = mid - 1;
-//
-//			for (int i = pointerOne; i <= pointerTwo; i++) {
-//				if (treeMap.containsKey(arr[i])) {
-//					treeMap.put(arr[i], treeMap.get(arr[i]) + 1);
-//				} else {
-//					treeMap.put(arr[i], 1);
-//				}
-//
-//			}
-//
-//			found = false;
-//			if (treeMap.size() == countUnique) {
-//				found = true;
-//			}
-//
-//			while (pointerTwo < n - 1) {
-//				pointerOne++;
-//				pointerTwo++;
-//
-//				if (treeMap.containsKey(arr[pointerOne]) && treeMap.get(arr[pointerOne]) > 1) {
-//					treeMap.put(arr[pointerOne], treeMap.get(arr[pointerOne]) - 1);
-//				} else {
-//					treeMap.remove(arr[pointerOne]);
-//				}
-//
-//				if (treeMap.containsKey(arr[pointerTwo])) {
-//					treeMap.put(arr[pointerTwo], treeMap.get(arr[pointerTwo]) + 1);
-//				} else {
-//					treeMap.put(arr[pointerTwo], 0);
-//				}
-//
-//				if (treeMap.size() == countUnique) {
-//					found = true;
-//					break;
-//				}
-//			}
-//
-//			if (found) {
-//				hi = mid;
-//				smallestPossibleMid = Math.min(mid, smallestPossibleMid);
-//			} else {
-//				lo = mid + 1;
-//			}
-//
-//		}
-//
-//		System.out.println(smallestPossibleMid);
+		System.out.println(ans);
 
 	}
 
