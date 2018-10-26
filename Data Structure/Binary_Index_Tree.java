@@ -18,7 +18,8 @@ import java.util.TreeMap;
  * get the sum of the elements before that element, this way when updating the array with new element 
  * instead of updating all elements in the array we just update the one's in between the checkpoint
  * 
- * The binary index tree is a binary tree of indexes an example of a tree of length 8, to get the sum of first 8 elements is as following
+ * The binary index tree is a binary tree of indexes an example of a tree of length 8, 
+ * to get the sum of first 8 elements is as following
  *   0
  *      4
  *         6
