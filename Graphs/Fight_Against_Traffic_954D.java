@@ -5,7 +5,7 @@ import java.util.*;
  * Problem: given source and destination node in graph, find the number of pairs of nodes in this graph
  * where we can put an edge between them and the minimum path between source and target won't change
  * 
- * Idea: run BFS in order to get minimum path from any node and source node and destination node in two 
+ * Idea: run BFS in order to get minimum path from any node to source node and destination node in two 
  * Separate arrays. Using these arrays we can calculate the distance from source node to node u and
  * add one to get new path to node v then add the distance from v to destination node. If this is 
  * bigger than minimum path from s to t then this addition of edge is valid.
