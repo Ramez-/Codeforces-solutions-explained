@@ -53,7 +53,7 @@ public class Mike_and_Feet_547B {
 		}
 
 	}
-
+	// if the array was circular then you could have prefilled the stack with indeces from n - 1 till 0
 	public static void fillRight() {
 		Stack<Integer> stack = new Stack<>();
 
